@@ -14,5 +14,12 @@
   "author": "Yu Zheng",
   "license": "ISC",
   "homepage": "https://github.com/WesleyFaveri/react-native-wheel-picker/blob/master/README.md",
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WesleyFaveri/react-native-wheel-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WesleyFaveri/react-native-wheel-picker/issues"
+  }
 }
