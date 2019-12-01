@@ -30,37 +30,10 @@ const WheelCurvedPickerNativeInterface = {
 const WheelCurvedPickerNative = requireNativeComponent('WheelCurvedPicker', WheelCurvedPickerNativeInterface);
 
 class WheelCurvedPicker extends React.Component {
-
-	propTypes: {
-		...View.propTypes,
-
-		data: PropTypes.array,
-
-		textColor: PropTypes.string,
-
-		textSize: PropTypes.number,
-
-		itemStyle: PropTypes.object,
-
-		itemSpace: PropTypes.number,
-
-		onValueChange: PropTypes.func,
-
-		selectedValue: PropTypes.any,
-
-		selectedIndex: PropTypes.number,
-
-		lineColor: PropTypes.string,
-
-		lineGradientColorFrom: PropTypes.string,
-
-		lineGradientColorTo: PropTypes.string,
-	}
-
 	constructor(props){
 		super(props)
 		this.state = this._stateFromProps(props)
-	}
+	};
 
 	static defaultProps = {
 		itemStyle : {color:"white", fontSize:26},
@@ -105,11 +78,6 @@ class WheelCurvedPicker extends React.Component {
 }
 
 class Item extends React.Component {
-	propTypes: {
-		value: React.PropTypes.any, // string or integer basically
-		label: React.PropTypes.string,
-	}
-
 	render () {
 		// These items don't get rendered directly.
 		return null;
